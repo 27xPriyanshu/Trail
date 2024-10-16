@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .flexCenter{@apply flex justify-center items-center;}
+          .nav-links{
+            @apply hover:accent-color hover:text-2xl transition-all ease-in-out duration-300;
+          }
+          .accent-color {
+            @apply text-[#641464];
+          }
+        }
+      </style>
+
+</head>
+
+<body id="body">
+    <header class="flex justify-between px-24 py-10 border-b border-gray-200"><img src="./assest/logo.webp"
+            alt="virarhub logo" />
+        <nav>
+            <ul class="flex gap-8 text-xl font-medium  items-center h-full">
+                <li><a class="nav-links" href="#">Startup Quest</a></li>
+                <li><a class="nav-links" href="#">About us</a></li>
+                <li><a class="nav-links" href="#">Services</a></li>
+                <li><a class="nav-links" href="#">Programs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="min-w-screen flex relative px-24 py-10 items-start  justify-start flex-col">
+        <section
+            class="bg-[url('./assest/bgimage.webp')] flex justify-center items-start flex-col space-y-20  bg-cover p-20 bg-no-repeat w-full h-[50rem] relative rounded-2xl">
+            <h2 class="text-[5rem] font-bold text-left text-white  w-2/3">Empowering Tomorrow's Innovators Today!
+            </h2>
+            <button class="bg-white text-2xl font-medium px-10 py-5 rounded-2xl">Submit</button>
+        </section>
+       
+    </main>
+    <main>
+      <div class=" bg-white h-screen flex flex-col relative">
+        <div xclass=" relative my-20">
+        <div class="relative">
+        <div class="relative">
+          <img alt="alt" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" class="absolute left-7 sm:left-16  sm:w-[35%] hover:scale-105 w-[70%] right-0 md:right-[500px] z-10 top-7 rounded-2xl" style="color:transparent" srcset="./assest/about1.webp" src="./assest/about1.webp">
+          <img alt="alt" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" class="absolute sm:w-[25%] hover:scale-105 w-[50%] right-0 md:right-[500px] left-[8rem] sm:left-[14.5rem] z-10 top-[9rem] sm:top-[16.5rem] rounded-2xl object-cover" style="color:transparent" srcset="./assest/about2.webp" src="./assest/about2">
+
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="w-full sm:w-4/5 mx-auto h-4/6 flex items-center justify-center mt-[150px] mb-[100px]">
+          <a href="https://unstop.com/competitions/startup-quest-2024-unleashing-innovation-in-ai-robotics-and-blockchain-virar-hub-incubator-849326" target="_blank"><img alt="" loading="lazy" width="1599" height="387" decoding="async" data-nimg="1" style="color:transparent" srcset="./assest/Rectangle.webp" src="./assest/Rectangle.webp"></a>
+        </div>
+    </main>
+</body>
+
+</html>
